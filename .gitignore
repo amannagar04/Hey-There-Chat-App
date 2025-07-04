@@ -24,6 +24,5 @@ dist-ssr
 *.sw?
 
 .env
-# check
 n1.pdf
 Notes1.png
