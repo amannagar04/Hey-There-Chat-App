@@ -1,5 +1,3 @@
-import {useEffect} from 'react'
-import Navbar from './components/Navbar'
 import Homepage from './pages/Homepage'
 import SignUpPage from './pages/SignUpPage'
 import LoginPage from './pages/LoginPage'
@@ -15,7 +13,6 @@ const App = () => {
 
   return (
     <div>
-      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={authUser ? <Homepage /> : <Navigate to="/login" />} />
         <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to="/" />} />
